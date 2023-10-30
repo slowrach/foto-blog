@@ -1,0 +1,78 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+   font-size: 62.5%;
+   font-family: 'Mulish', sans-serif;
+
+   --titles: #202024;--footer: #323238;--search-bar: #3d3d3d;
+   --header-title: #8d8d99;
+   --bg-search-bar: #eeeeee;--bg-tag: #f5f5f5;
+   --bg-app: #cae5fa;
+}
+
+body {
+   font-size: 1.6rem;
+}
+
+#app {
+   background-color: var(--bg-app);
+   display: grid;
+   grid-template-rows: max-content 1fr max-content;
+   height: 100vh;
+}
+
+.container {
+   padding: 1.6rem 3.2rem;
+   width: min(112rem, 100%);
+   margin: 0 auto;
+}
+
+header, nav, nav ul {
+   display: flex;
+   align-items: center;
+   gap: 7.2rem;
+   font-weight: 700;
+}
+
+header img {
+   width: 4rem;
+   height: 4rem;
+}
+
+nav ul {
+   list-style: none;
+   font-size: 1.8rem;
+   color: var(--header-title);
+}
+
+ul li.active {
+   color: var(--titles);
+}
+
+header form {
+   flex: 1;
+}
+
+header .profile {
+   width: 4.2rem;
+   height: 4.2rem;
+   border-radius: 50%;
+}
+
+main {
+   overflow-y: scroll;
+   background-color: #ffffff;
+}
+
+footer p {
+   color: var(--footer);
+   font-weight: 600;
+   text-align: center;
+   padding: 1.6rem;
+}
