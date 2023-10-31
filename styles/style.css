@@ -10,10 +10,14 @@
    font-size: 62.5%;
    font-family: 'Mulish', sans-serif;
 
-   --titles: #202024;--footer: #323238;--search-bar: #3d3d3d;
+   --titles: #202024;
+   --footer: #323238;--search-bar: #3d3d3d;
    --header-title: #8d8d99;
-   --bg-search-bar: #eeeeee;--bg-tag: #f5f5f5;
-   --bg-app: #c3dbeb;
+   --bg-tag: #b2c7da;
+   --bg-main: #abc7d9;
+   --bg-app: #c0d5e2;
+   --bg-item: #c0d7e6d4;
+   --bg-search-bar: #e7e6e6;
 }
 
 body {
@@ -90,7 +94,53 @@ header .profile {
 
 main {
    overflow-y: scroll;
-   background-color: #ffffff;
+   scrollbar-gutter: stable both-edges;
+   background-color: var(--bg-main);
+}
+
+.container h1 {
+   font-size: 2.4rem;
+   padding-top: 1.6rem;
+}
+
+.gallery {
+   margin-top: 3.2rem;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2.2rem;
+}
+
+.item {
+   background-color: var(--bg-item);
+   border-radius: 0.8rem;
+   overflow: hidden;
+}
+
+.item img {
+   width: 100%;
+   aspect-ratio: 16/9;
+   object-fit: cover;
+}
+
+.title-item {
+   padding: 2.2rem;
+}
+
+.title-item h2 {
+   font-size: 1.9rem;
+   
+}
+
+.tags {
+   margin-top: 2rem;
+}
+
+.tags span {
+   padding: 0.6rem;
+   font-size: 1.2rem;
+   text-transform: uppercase;
+   background-color: var(--bg-tag);
+   border-radius: 0.4rem;
 }
 
 footer p {
