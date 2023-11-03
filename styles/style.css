@@ -23,6 +23,7 @@
 
 body {
    font-size: 1.6rem;
+   overflow-y: hidden;
 }
 
 #app {
@@ -153,6 +154,10 @@ main {
    text-transform: uppercase;
    background-color: var(--bg-tag);
    border-radius: 0.4rem;
+}
+
+.tags span:hover {
+   background-color: #a4b7c7;
 }
 
 footer p {
